@@ -6,6 +6,7 @@ const playerr = document.getElementById("player");
 const DrawP = document.getElementById("draw");
 const Reset = document.getElementById("reset-btn");
 const paragraphP = document.getElementById("picked");
+const Result = document.getElementById("Result-final");
 const game = ["rock", "paper", "scissors"];
 
 let score = JSON.parse(localStorage.getItem("score"));
@@ -139,7 +140,9 @@ else {
     DrawP.textContent = `Draw: ${score.draw} times`;
 
 }
-    paragraphP.textContent = `You picked ${playerMove} and Computer picked ${result} and the game: ${output}`;
+    paragraphP.innerHTML = `You: <img src="./images/${playerMove}-emoji.png" class="picked">
+   -<img src="./images/${result}-emoji.png" class="picked">  Computer`;
+    Result.innerHTML = `The game: ${output}`; 
    
    
 }

@@ -1,0 +1,71 @@
+* {
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+   
+    
+}
+
+h1, h3{
+    color: white;
+
+}
+
+.rock-img,
+.paper-img,
+.scissors-img {
+    height: 50px;
+
+
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 5px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+}
+
+.picked {
+    width: 50px;
+}
+.game {
+    margin-top: 10px;
+}
+.reset-btn {
+    background: green;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+
+.container {
+    position: relative;
+    text-align: center;
+   
+}
+.final {
+    border-bottom: 2px solid red;
+}
+
+.main {
+    border: 1px solid white;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 28%;
+}
