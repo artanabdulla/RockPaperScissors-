@@ -72,7 +72,7 @@ function playGame(playerMove) {
         Draw = false;
     }
     else if (result === "scissors") {
-        output ="you Win";
+        output ="You WIN";
         PlayerWon = true;
         ComputerWon = false;
         Draw = false;
@@ -87,7 +87,7 @@ function playGame(playerMove) {
 
  else if (playerMove === "paper") {
     if (result === "rock") {
-        output = "You win";
+        output = "You WIN";
         PlayerWon = true;
         Draw = false;
         ComputerWon = false;
@@ -114,7 +114,7 @@ else if (playerMove === "scissors") {
         Draw = false;
     }
     else if (result === "paper") {
-      output ="You win";
+      output ="You WIN";
       PlayerWon = true;
       ComputerWon = false;
       Draw = false;
@@ -142,7 +142,7 @@ else {
 }
     paragraphP.innerHTML = `You: <img src="./images/${playerMove}-emoji.png" class="picked">
    -<img src="./images/${result}-emoji.png" class="picked">  Computer`;
-    Result.innerHTML = `The game: ${output}`; 
+    Result.innerHTML = `${output}`; 
    
    
 }
